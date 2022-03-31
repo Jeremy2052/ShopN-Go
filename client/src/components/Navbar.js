@@ -52,8 +52,8 @@ const Left = styled.div`
 const Image = styled.img`
   width: 60px;
   height: 40px;
-  ${mobile({display:"none"})}
-`
+  ${mobile({ display: "none" })}
+`;
 
 const Icon = styled(Home)`
   &.materialIcon {
@@ -98,7 +98,7 @@ const MenuItem = styled.div`
   font-weight: 500;
   color: black;
 
-  &:hover{
+  &:hover {
     color: white;
   }
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
