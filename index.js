@@ -9,6 +9,9 @@ const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/order");
 const stripeRoute = require("./routes/stripe");
 const cors = require("cors");
+const path = require("path");
+
+const port = process.env.PORT || 5000;
 
 dotenv.config();
 app.use(cors());
@@ -33,6 +36,6 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-app.listen(process.env.PORT || 5000, () => {
+app.listen(port, () => {
   // console.log("server is running on 5000");
 });
